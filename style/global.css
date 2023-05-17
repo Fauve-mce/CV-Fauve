@@ -1,0 +1,107 @@
+header {
+    background-color: lightgray;
+    height: 10vh; /* view height*/
+    width: 100vw;   /*view width*/
+}
+
+nav {
+    padding: 0 2rem;
+    height: 100%;
+}
+
+nav li {
+    margin: 0 1rem;
+    list-style: none; /*Pour enlever les puces*/
+}
+
+nav a {
+    color : rgb(187, 115, 26);
+    text-decoration: none;
+    padding-bottom : 0.4rem;
+}
+
+/* Quand le lien a déjà était visité*/
+nav a:visited {
+    color : transparent;
+}
+/* Quand on clique sur le lien */
+nav a:focus {
+    color : rgb(98, 58, 9);
+}
+nav a:hover {
+    border-bottom : 1px solid darkgreen;
+}
+
+footer {
+    background-color: lightgray;
+    height: 10vh;
+    width: 100vw;
+}
+
+main {
+    background-color: rgb(243, 234, 234);
+    min-height: 80vh; /* Fera au minimum 80 mais si le contenu dépasse, ça fera plus */
+    width: 80vw;
+    margin : auto;
+}
+
+header img {
+    height: 25px;
+}
+
+
+
+footer img {
+    height: 25px;
+}
+
+.container {
+    display : flex
+}
+
+.row {
+    flex-direction: row ;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+
+}
+
+.align-center {
+    align-items: center;
+}
+
+.box {
+    width: 800px;
+    height: 500px;
+    background-color: brown;
+
+    display: flex; /*Par défaut : direction = row */
+    flex-direction: column;
+
+    justify-content: space-around; /*axe principal*/
+    align-items: center; /* axe secondaire */
+}
+
+.elem {
+    width: 200px;
+    background-color: chocolate;
+    border : 1px solid black;
+}
+
+.elem1 {
+    height: 100px;
+    
+}
+
+.elem2 {
+    height : 50px;
+    padding : 10px
+
+}
+
